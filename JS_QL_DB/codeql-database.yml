@@ -1,0 +1,11 @@
+---
+sourceLocationPrefix: /home/ravindu/tests/codeql/nutshell
+baselineLinesOfCode: 2564
+unicodeNewlines: true
+columnKind: utf16
+primaryLanguage: javascript
+creationMetadata:
+  sha: f49c4fc2da746e8d416dd67db3fd47458067fd25
+  cliVersion: 2.15.1
+  creationTime: 2023-11-01T22:40:15.587197947Z
+finalised: true

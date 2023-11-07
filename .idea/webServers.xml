@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="491f5a32-f89e-4dc0-a105-58e572a12011" name="seltzer">
+        <fileTransfer rootFolder="/home/ravindu" accessType="SFTP" host="seltzer.seclab.cs.ucsb.edu" port="22" sshConfigId="2fb94c99-f39f-4d38-999f-44a22fc8e6a6" sshConfig="ravindu@seltzer.seclab.cs.ucsb.edu:22 key" keyPair="true">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" passiveMode="true" shareSSLContext="true" />
+          </advancedOptions>
+        </fileTransfer>
+      </webServer>
+    </option>
+  </component>
+</project>

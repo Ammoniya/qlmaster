@@ -1,0 +1,4 @@
+name: custom-query
+version: 0.0.0
+dependencies:
+  codeql/javascript-all: "*"
