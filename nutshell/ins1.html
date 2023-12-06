@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>XSS Example</title>
+</head>
+<body>
+  <h1>Welcome!</h1>
+  <script>
+    // Get the name parameter from the URL
+    var urlParams = new URLSearchParams(window.location.search);
+    var name = urlParams.get('name');
+
+    // Display the name on the page
+    document.write('<p>Hello, ' + name + '!</p>');
+  </script>
+</body>
+</html>
+
+<!-- Path: ins2.html -->

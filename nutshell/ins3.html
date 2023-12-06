@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Message Board</title>
+</head>
+<body>
+  <h1>Message Board</h1>
+  <div id="messages"></div>
+
+  <script>
+    // Assume these messages are retrieved from the server
+    var messages = [
+      { user: "Alice", text: "Hi there!" },
+      { user: "Bob", text: "Check out this cool link: <a href='javascript:alert(\"XSS\")'>Click me!</a>" }
+      // In a real scenario, messages would be fetched from a server/database
+    ];
+
+    // Display messages on the page
+    var messagesDiv = document.getElementById("messages");
+    messages.forEach(function(message) {
+      var messageElement = document.createElement("p");
+      var strongElement = document.createElement("strong");
+      strongElement.textContent = message.user + ": ";
+      messageElement.appendChild(strongElement);
+
+      var textNode = document.createTextNode(message.text);
+      messageElement.appendChild(textNode);
+
+      messagesDiv.appendChild(messageElement);
+    });
+  </script>
+</body>
+</html>
